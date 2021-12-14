@@ -1,0 +1,20 @@
+{
+  "name": "resumebackend",
+  "version": "1.0.0",
+  "description": "This will serve as the backend to my resume website",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nitsua365/MyWebsite.git"
+  },
+  "author": "Austin Blanchard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nitsua365/MyWebsite/issues"
+  },
+  "homepage": "https://github.com/Nitsua365/MyWebsite#readme"
+}
