@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Nitsua365/MyWebsite/issues"
   },
-  "homepage": "https://github.com/Nitsua365/MyWebsite#readme"
+  "homepage": "https://github.com/Nitsua365/MyWebsite#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
