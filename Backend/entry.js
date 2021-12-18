@@ -7,7 +7,6 @@ const routes = require('./endpoints')(app)
 var mongoClient;
 var db;
 
-
 async function main() {
   const port = 8080;
   const uri = "mongodb+srv://" + apikeys.mongoKeys.mongoUser + ":" + 
@@ -15,7 +14,17 @@ async function main() {
                               "@" + apikeys.mongoKeys.mongoClusterName + "/" + 
                               apikeys.mongoKeys.mongodbName + 
                               "?retryWrites=true&w=majority";
-  
+
+  db = await initDB(port, uri);
+
+  // listen on port 8080
+  app.listen(port, () => {
+    console.log(chalk.hex("#006eff").bold(`Running on: http://localhost:${port}`));
+  });
+
+}
+
+async function initDB(port, uri) {
   try {
     mongoClient = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -25,17 +34,11 @@ async function main() {
 
     console.log(chalk.red("MongoDB Client Connected..."));
     
-    db = mongoClient.db(apikeys.mongoKeys.mongodbName);
+    return mongoClient.db(apikeys.mongoKeys.mongodbName);
 
   } catch (e) {
     console.error(`Mongo client could not connect: ${e}`);
   }
-
-  // listen on port 8080
-  app.listen(port, () => {
-    console.log(chalk.hex("#006eff").bold(`Running on: http://localhost:${port}`));
-  });
-
 }
 
 main();

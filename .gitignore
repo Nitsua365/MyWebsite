@@ -1,3 +1,26 @@
 Backend/node_modules/
 Backend/api-keys.js
-ResumeSite.code-workspace
+ResumeSite.code-workspace/
+Frontend/my-app/node_modules/
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+Frontend/my-app/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+Frontend/my-app/.DS_Store
+Frontend/my-app/.env.local
+Frontend/my-app/.env.development.local
+Frontend/my-app/.env.test.local
+Frontend/my-app/.env.production.local
+
+Frontend/my-app/npm-debug.log*
+Frontend/my-app/yarn-debug.log*
+Frontend/my-app/yarn-error.log*
