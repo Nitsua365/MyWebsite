@@ -1,1 +1,2 @@
-const db = require('./entry').mongoClient;
+const db = require('./entry').db;
+

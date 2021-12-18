@@ -3,7 +3,10 @@ const chalk = require('chalk');
 const app = express();
 const apikeys = require('./api-keys')
 const { MongoClient } = require('mongodb')
+const routes = require('./endpoints')(app)
 var mongoClient;
+var db;
+
 
 async function main() {
   const port = 8080;
@@ -16,26 +19,25 @@ async function main() {
   try {
     mongoClient = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-    console.log(chalk.red("Connecting to MongoDB..."))
+    console.log(chalk.red("Connecting to MongoDB..."));
 
     await mongoClient.connect();
 
     console.log(chalk.red("MongoDB Client Connected..."));
     
+    db = mongoClient.db(apikeys.mongoKeys.mongodbName);
 
   } catch (e) {
-    console.error("Mongo client could not connect: " + e);
+    console.error(`Mongo client could not connect: ${e}`);
   }
-
-  app.use(express.json());
 
   // listen on port 8080
   app.listen(port, () => {
-    console.log(chalk.hex("#006eff")("Running on: http://localhost:" + port));
+    console.log(chalk.hex("#006eff").bold(`Running on: http://localhost:${port}`));
   });
 
 }
 
 main();
 
-module.exports = { mongoClient, app }
+module.exports = { db, app }
