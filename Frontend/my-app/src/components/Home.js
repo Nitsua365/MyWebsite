@@ -1,5 +1,5 @@
 import React from 'react'
-// import {  } from 'reactstrap';
+import {  } from 'reactstrap';
 
 function Home() {
   return (

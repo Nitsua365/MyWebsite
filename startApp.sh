@@ -1,6 +1,6 @@
 #!/bin/bash
 
-trap "kill 0" EXIT
+trap "pkill -P $$" EXIT
 
 startBackend(){
   cd Backend && npm start && cd ../
