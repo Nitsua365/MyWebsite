@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const app = express();
 const apikeys = require('./api-keys')
 const { MongoClient } = require('mongodb')
-const routes = require('./endpoints')(app)
+const routes = require('./endpoints/endpoints')(app)
 var mongoClient;
 var db;
 
@@ -16,7 +16,7 @@ async function main() {
                               "?retryWrites=true&w=majority";
 
   db = await initDB(port, uri);
-
+  
   // listen on port 8080
   app.listen(port, () => {
     console.log(chalk.hex("#006eff").bold(`Running on: http://localhost:${port}`));

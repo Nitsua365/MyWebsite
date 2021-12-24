@@ -1,4 +1,4 @@
-const service = require('./service');
+const service = require('../service/service');
 const express = require('express');
 
 module.exports = function(app) {
