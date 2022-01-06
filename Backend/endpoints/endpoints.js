@@ -1,16 +1,20 @@
 const service = require('../service/service');
 const express = require('express');
+const router = express.Router();
 
-module.exports = function(app) {
+router.use(express.json());
 
-  app.use(express.json());
-
-  app.post('/home', (req, res) => {
+router.route('/home')
+  .post((req, res) => {
     service.insertItem(req.body);
     res.send(req.body);
   })
+  .get((req, res) => {
+    res.send('get on /home');
+  });
 
 
-}
+
+module.exports = router;
 
 

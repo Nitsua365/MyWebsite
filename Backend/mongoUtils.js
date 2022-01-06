@@ -6,7 +6,7 @@ var mongoClient;
 var db;
 
 module.exports = {
-  initDB : async (port, uri) => {
+  initDB : async (uri) => {
     try {
       mongoClient = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
   

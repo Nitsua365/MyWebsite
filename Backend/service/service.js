@@ -1,9 +1,9 @@
 const repo = require('../repository/repository');
 
-function insertItem(body) {
-  console.log(body);
+async function insertItem(body) {
+  // console.log(body);
 
-  repo.insertItemToDB(body);
+  await repo.insertItemToDB(body);
 
 }
 

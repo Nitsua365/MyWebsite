@@ -2,6 +2,14 @@ const db = require('../mongoUtils').getDB();
 const client = require('../mongoUtils').getClient();
 
   
-const insertItemToDB = () => {
-  client.collection('initial').insert('initial', JSON.stringify(document));
+const insertItemToDB = async (document) => {
+  const collection = db.collection('initial');
+
+  console.log(document);
+
+  const result = await collection.insertOne(document);
+
+  // console.log(result);
 }
+
+module.exports = { insertItemToDB }

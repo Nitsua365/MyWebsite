@@ -1,10 +1,10 @@
 import React from 'react'
-import {  } from 'reactstrap';
+import Jumbotron from './Jumbotron';
 
 function Home() {
   return (
     <div>
-      <h1>HELLO</h1>
+      <Jumbotron header={'Home'} subMsg={'This is the home page'} />
     </div>
   )
 }
