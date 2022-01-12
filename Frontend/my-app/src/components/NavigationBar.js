@@ -28,24 +28,6 @@ function NavigationBar() {
 
   return (
     <>
-      {/* <div class='NavBar'>
-        <div id='NavBar-title'>
-          <h1>Austin Blanchard</h1>
-        </div>
-
-        <div id='NavBar-ButtonGroup'>
-          <Link to= {{ pathname: '/' }}>
-            <button>Home</button>
-          </Link>
-          <Link to={{ pathname : '/Projects' }}>
-            <button>Projects</button>
-          </Link>
-          <Link to={{ pathname: '/ContactMe' }}>
-            <button>Contact Me</button>
-          </Link>
-        </div>
-      </div> */}
-
       <Navbar color="light" light expand="md" className='NavBar'>
         <NavbarBrand href="/" className='NavBrand'>Austin Blanchard</NavbarBrand>
         <NavbarToggler onClick={toggle} />

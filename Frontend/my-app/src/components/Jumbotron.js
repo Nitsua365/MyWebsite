@@ -3,9 +3,9 @@ import React from 'react'
 const Jumbotron = ({ header, subMsg }) => {
   return (
     <div className='Jumbotron'>
-      <h1>{header}</h1>
+      <h1 id="Jumbo-header">{header}</h1>
 
-      <p>{subMsg}</p>
+      <p id="Jumbo-SubMsg">{subMsg}</p>
     </div>
   )
 }

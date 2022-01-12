@@ -7,41 +7,135 @@
 } */
 
 .HomeNav {
-  border: 2px solid transparent;
-  transition: border 0.45s;
-  transition: all ease-in-out 0.45s;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
 }
 
 .HomeNav:hover {
-  border: 1px solid black;
-  background-color: rgb(202, 199, 199);
+  border-bottom: 3px solid grey;
 }
 
 .ProjectsNav {
-  border: 2px solid transparent;
-  transition: border 0.45s;
-  transition: all ease-in-out 0.45s;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
 }
 
 .ProjectsNav:hover {
-  border: 1px solid black;
-  background-color: rgb(202, 199, 199);
+  border-bottom: 3px solid grey;
 }
 
 .ContactMeNav {
-  border: 2px solid transparent;
-  transition: border 0.45s;
-  transition: all ease-in-out 0.45s;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
 }
 
 .ContactMeNav:hover {
-  border: 1px solid black;
-  background-color: rgb(202, 199, 199);
+  border-bottom: 3px solid grey;
 }
 
 .NavigationBar {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.Jumbotron {
+  margin: auto;
+  width: 50%;
+  border: 3px solid grey;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;  
+}
+
+#Jumbo-header {
+  padding-top: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#Jumbo-SubMsg {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.GitHub-Cards {
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+#Github-Cards-FirstRow {
+  padding-bottom: 5px;
+}
+
+#Github-Cards-SecondRow {
+  padding-top: 5px;
+}
+
+#cardOne-title {
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
+}
+
+#cardOne:hover > #cardOne-title {
+  border-bottom: 1px solid grey;
+}
+
+#cardTwo-title {
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
+}
+
+#cardTwo:hover > #cardTwo-title {
+  border-bottom: 1px solid grey;
+}
+
+#cardThree-title {
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
+}
+
+#cardThree:hover > #cardThree-title {
+  border-bottom: 1px solid grey;
+}
+
+#cardFour-title {
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
+}
+
+#cardFour:hover > #cardFour-title {
+  border-bottom: 1px solid grey;
+}
+
+#cardFive-title {
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
+}
+
+#cardFive:hover > #cardFive-title {
+  border-bottom: 1px solid grey;
+}
+
+#cardSix-title {
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: border .4s;
+}
+
+#cardSix:hover > #cardSix-title {
+  border-bottom: 1px solid grey;
 }
 
 /* .NavBar-ButtonGroup {
