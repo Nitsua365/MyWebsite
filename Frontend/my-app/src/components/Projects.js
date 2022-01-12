@@ -35,6 +35,7 @@ const Projects = () => {
           {dataLoaded && <Card body outline color="secondary" id="cardOne">
             <CardTitle id="cardOne-title">{github[0].repo}</CardTitle>
             <CardText>{github[0].description}</CardText>
+            <CardSubtitle>Language: {github[0].language}</CardSubtitle>
             <Button>Checkout {github[0].repo}</Button>
           </Card>}
         </Col>
@@ -42,6 +43,7 @@ const Projects = () => {
           {dataLoaded && <Card body outline color="secondary" id="cardTwo">
             <CardTitle id="cardTwo-title">{github[1].repo}</CardTitle> 
             <CardText>{github[1].description}</CardText>
+            <CardSubtitle>Language: {github[1].language}</CardSubtitle>
             <Button>Checkout {github[1].repo}</Button> 
           </Card>}
         </Col>
@@ -49,6 +51,7 @@ const Projects = () => {
           {dataLoaded && <Card body outline color="secondary" id="cardThree">
             <CardTitle id="cardThree-title">{github[2].repo}</CardTitle>
             <CardText>{github[2].description}</CardText>
+            <CardSubtitle>Language: {github[2].language}</CardSubtitle>
             <Button>Checkout {github[2].repo}</Button> 
           </Card>}
         </Col>
@@ -59,6 +62,7 @@ const Projects = () => {
           {dataLoaded && <Card body outline color="secondary" id="cardFour">
             <CardTitle id="cardFour-title">{github[3].repo}</CardTitle>
             <CardText>{github[3].description}</CardText>
+            <CardSubtitle>Language: {github[3].language}</CardSubtitle>
             <Button>Checkout {github[3].repo}</Button> 
           </Card>}
         </Col>
@@ -66,6 +70,7 @@ const Projects = () => {
           {dataLoaded && <Card body outline color="secondary" id="cardFive">
             <CardTitle id="cardFive-title">{github[4].repo}</CardTitle>
             <CardText>{github[4].description}</CardText>
+            <CardSubtitle>Language: {github[4].language}</CardSubtitle>
             <Button>Checkout {github[4].repo}</Button> 
           </Card>}
         </Col>
@@ -73,6 +78,7 @@ const Projects = () => {
           {dataLoaded && <Card body outline color="secondary" id="cardSix">
             <CardTitle id="cardSix-title">{github[5].repo}</CardTitle>
             <CardText>{github[5].description}</CardText>
+            <CardSubtitle>Language: {github[5].language}</CardSubtitle>
             <Button>Checkout {github[5].repo}</Button> 
           </Card>}
         </Col>        
